@@ -21,16 +21,23 @@ Inspired by this [web.enavu.com](http://web.enavu.com/tutorials/making-an-infini
   ...
 </head>
 ```
+
 ###Options
+####Default
 |Option         |Description                                                                              |Type      |Default |
 |---------------|-----------------------------------------------------------------------------------------|----------|--------|
-|`itemsVisible` |Number of items to display. For smooth movement, leave at a minimum 2 items out of view. |`int`     |2       |
+|`itemsVisible` |Number of items to display.                                                              |`int`     |2       |
 |`slideDelay`   |This is the carousel animations duration, in milliseconds.                               |`int`     |500     |
 |`autoSlide`    |Move carousel without user interaction when page is ready.                               |`boolean` |0       |
 |`autoDelay`    |The frequency the auto slide moves the carousel, in milliseconds.                        |`int`     |5000    |
 |`hoverPause`   |Pause auto slide when hovering over carousel.                                            |`boolean` |1       |
 |`imgCaption`   |Auto generate captions for each slide using `img` `alt` attribute.                       |`boolean` |1       |
 |`onComplete`   |callback function                                                                        |`function`|null    |
+####Special
+If you need to remove the plugin from your page, use `destroy`.
+```javascript
+$('ul').dbpasCarousel('destroy');
+```
 
 ###Usage
 ####Simple Images
@@ -89,3 +96,7 @@ Wrap your content with a `div` and place it into the `li` elements.
   ...
 </body>
 ```
+
+###Tips
+- Items disappear before the carousel moves; make sure to leave at a minimum 2 items out of view.
+- If the formatting looks bad, be sure to setup `css` default overrides. Look to this `[data-carousel-control="wrapper"] ul li` or `[data-carousel-control="wrapper"] ul li div` selectors to fix most of your issues.
