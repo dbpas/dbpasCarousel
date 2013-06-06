@@ -4,6 +4,9 @@ dbpasCarousel
 Another jQuery carousel plugin! <br />
 Inspired by this [web.enavu.com](http://web.enavu.com/tutorials/making-an-infinite-jquery-carousel/) article.
 
+###Overview
+This plugin will convert the `ul` element into a carousel.
+
 [Demo](http://dbpas.github.io/dbpasCarousel/)
 
 ###Install
