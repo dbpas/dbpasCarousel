@@ -1,0 +1,48 @@
+[data-carousel-name] {
+	display: table;
+	margin-right: auto;
+	margin-left: auto;
+}
+[data-carousel-control="wrapper"] {
+	display: table-cell;
+	overflow: hidden;
+}
+[data-carousel-control="wrapper"] ul {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	white-space: nowrap;
+}
+[data-carousel-control="wrapper"] ul li {
+	display: inline-block;
+	min-width: 100px;     /*items are smashed, increase with min width*/
+	max-width: none;      /*items are to wide, limit with max width*/
+	min-height: none;     /*items are to long, limit with min height*/
+	padding-top: 5px;
+	padding-right: 5px;   /*items need some room, increase padding right*/
+	padding-bottom: 5px;
+	padding-left: 5px;    /*items need some room, increase padding left*/
+	vertical-align: top;
+	text-align: center;
+}
+[data-carousel-control="wrapper"] ul li .caption {
+	white-space: normal;
+}
+[data-carousel-control="wrapper"] ul li div {
+	overflow: auto;
+	text-align: left;
+	white-space: normal;
+}
+[data-carousel-control="left"], [data-carousel-control="right"] {
+	display: table-cell;
+	font-size: 2em;
+	vertical-align: middle;
+	background-color: rgba(0, 0, 0, 0.1);
+	color: rgba(255, 255, 255, 1);
+	cursor: pointer;
+}
+.no-touch [data-carousel-control="left"]:hover, .no-touch [data-carousel-control="right"]:hover, [data-carousel-control="left"]:active, [data-carousel-control="right"]:active {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: rgba(255, 255, 255, 1);
+}
