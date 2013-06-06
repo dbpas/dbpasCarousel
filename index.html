@@ -13,10 +13,13 @@
     <![endif]-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <script src="javascripts/jquery.dbpas.carousel.js"></script>
-    <title>dbpasCarousel by dbpas</title>
+    <title>dbpas :: dbpasCarousel</title>
     <script>
       $(document).ready(function() {
-        $('#main_content ul').dbpasCarousel();
+        $('#main_content ul').dbpasCarousel({
+          itemsVisible: 2,
+          autoSlide: 1
+        });
       });
     </script>
   </head>
@@ -39,6 +42,13 @@
         <hr>
 
         <section id="main_content">
+          <ul>
+            <li><img src="http://lorempixel.com/150/150/abstract" /></li>
+            <li><img src="http://lorempixel.com/150/150/animals" /></li>
+            <li><img src="http://lorempixel.com/150/150/nature" /></li>
+            <li><img src="http://lorempixel.com/150/150/people" /></li>
+            <li><img src="http://lorempixel.com/150/150/city" /></li>
+          </ul>
           <ul>
             <li><img src="http://lorempixel.com/150/150/abstract" /></li>
             <li><img src="http://lorempixel.com/150/150/animals" /></li>
