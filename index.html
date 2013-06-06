@@ -8,6 +8,11 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
     <link rel="stylesheet" type="text/css" href="stylesheets/jquery.dbpas.carousel.css" media="all" />
+    <style>
+      #para [data-carousel-control="wrapper"] ul li {
+        max-width: 150px;
+      }
+    </style>
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -16,7 +21,7 @@
     <title>dbpas :: dbpasCarousel</title>
     <script>
       $(document).ready(function() {
-        $('#main_content ul').dbpasCarousel({
+        $('#pics, #para').dbpasCarousel({
           itemsVisible: 3,
           autoSlide: 1
         });
@@ -42,7 +47,7 @@
         <hr>
 
         <section id="main_content">
-          <ul>
+          <ul id="pics">
             <li><img src="http://lorempixel.com/150/150/abstract" /></li>
             <li><img src="http://lorempixel.com/150/150/animals" /></li>
             <li><img src="http://lorempixel.com/150/150/nature" /></li>
@@ -51,7 +56,7 @@
           </ul>
           <br />
           <br />
-          <ul>
+          <ul id="para">
             <li>
               <div>
                 <h3>Paragraph 1</h3>
