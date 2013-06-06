@@ -16,7 +16,7 @@
 }
 [data-carousel-control="wrapper"] ul li {
 	display: inline-block;
-	min-width: 100px;     /*items are smashed, increase with min width*/
+	min-width: none;     /*items are smashed, increase with min width*/
 	max-width: none;      /*items are to wide, limit with max width*/
 	min-height: none;     /*items are to long, limit with min height*/
 	padding-top: 5px;
