@@ -1,8 +1,3 @@
-<link rel="stylesheet" href="https://github.com/dbpas/dbpasCarousel/jquery.dbpasCarousel.css" media="all">
-<script src="https://github.com/dbpas/dbpasCarousel/jquery.dbpasCarousel.js"></script>
-<script>
-  console.log('test');
-</script>
 dbpasCarousel
 =============
 
