@@ -26,7 +26,7 @@ if (!Object.create) {
 	'use strict';
 	
 	function destroy(elem) {
-		var $data = $.data($(elem)[0], 'dbpasCarousel');                          //get jquery data to remove timer
+		var $data = $.data($(elem)[0], 'dbpasCarousel');                                //get jquery data to remove timer
 
 		if ($data) {
 			clearInterval($data.timerHandle);                                       //remove timer
@@ -138,7 +138,7 @@ if (!Object.create) {
 			var self = this, eventNS = '.dbpasCarousel',
 				pauseActionStart, pauseActionStop, controlAction;
 			
-			if ('ontouchstart' in doc.documentElement) {        //check for touch events
+			if ('ontouchstart' in doc.documentElement) {              //check for touch events
 				controlAction = 'touchstart' + eventNS;
 				pauseActionStart = 'touchstart' + eventNS;
 				pauseActionStop = 'touchend' + eventNS;
